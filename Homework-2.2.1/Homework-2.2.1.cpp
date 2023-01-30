@@ -1,4 +1,5 @@
 #include <iostream>
+#include <Windows.h>
 
 enum class months {
     январь = 1,
@@ -17,6 +18,7 @@ enum class months {
 
 int main() {
     setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251);
     int my_month = 0;
 
     do {
