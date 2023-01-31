@@ -2,6 +2,7 @@
 #include <Windows.h>
 
 enum class months {
+    zero = 0,
     Январь = 1,
     Февраль,
     Март,
@@ -61,7 +62,7 @@ int main() {
         case months::Декабрь:
             std::cout << "Декабрь" << std::endl;
             break;
-        case 0:
+        case months::zero:
             std::cout << "До свидания!" << std::endl;
         default:
             if (my_month > 12 || my_month < 0)
